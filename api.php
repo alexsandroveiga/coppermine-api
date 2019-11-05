@@ -54,8 +54,8 @@ while ($row = mysqli_fetch_assoc($result)) {
 	$dados2 = mysqli_fetch_array($query2);
 	
 	$timthumb = $timthumbUrl."?src=";
-	$uri = "http://beamiller.com.br/galeria/albums/".$dados["filepath"]."thumb_".$dados["filename"];
-	$uri2 = "http://beamiller.com.br/galeria/albums/".$dados["filepath"]."normal_".$dados["filename"];
+	$uri = $galleryUrl. "/albums/" .$dados["filepath"]."thumb_".$dados["filename"];
+	$uri2 = $galleryUrl. "/albums/" .$dados["filepath"]."normal_".$dados["filename"];
 
 	if (($w == '') and ($h == '')): $image_uri = $uri;
 	else: $image_uri = $timthumb.$uri2."&w=".$w."&h=".$h;
