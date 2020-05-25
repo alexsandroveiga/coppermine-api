@@ -1,0 +1,55 @@
+<html>
+  <head>
+    <title>Coppermine API</title>
+ <meta charset="UTF-8">
+    <script src="https://kit.fontawesome.com/0069ef6553.js" crossorigin="anonymous"></script>
+    <style>
+      @import url(https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap);html{-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box}*,:after,:before{-webkit-box-sizing:inherit;-moz-box-sizing:inherit;box-sizing:inherit}body{background-color:#f8f8f8;font-family:Poppins,sans-serif;width:100%;margin:0;padding:0}.tit h1{margin:0}code{background:#000;color:#fff;font-family:Arial,Helvetica,sans-serif;padding:.5rem;font-weight:100;margin:.25rem 0 1rem 0;display:inline-block}footer{font-size:12px;color:#137ac1;margin-bottom:.5rem}.gallery{text-align:center;font-weight:600;max-width:90%;margin:.5rem auto;background:#f0f0f0;padding:1rem}.gallery .grid{background:#e0e0e0;margin:.5em;padding:.5em 1rem;display:flex;flex-flow:row wrap;justify-content:space-between}.album{width:calc(25% - .75em);background:#f0f0f0;padding:.5rem;margin:.5rem 0}.album_image img{max-width:100%;display:block;margin:0 auto}.album_title{padding:.5rem;color:#fff;margin:.5rem auto 0 auto;font-size:.85em;background:#36a2c2;font-weight:500}.gitbtn{background:#222;color:#fff;display:flex;text-transform:uppercase;padding:1rem;margin:1rem auto .5rem auto;flex-flow:row wrap;width:150px;border-radius:4px;justify-content:center}.gitbtn i{font-size:2rem;margin-right:1rem}a{text-decoration: none;}
+    </style>
+  </head>
+  <body>
+    <center><h1>Coppermine API</h1></center>
+    <section class="gallery">
+      <div class="tit">
+        <h1>Default (4 albums [thumbnail size which is set in the coppermine settings])</h1>
+        <code>&lt;script src="http://seusite.com.br/galeria/api.php"&gt;&lt;/script&gt;</code>
+      </div>
+      <div class="grid">
+        <script src="http://jodiecomer.com.br/galeria/api.php"></script>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="tit">
+        <h1>Custom albums number (example: 8)</h1>
+        <code>&lt;script src="http://seusite.com.br/galeria/api.php?n=8"&gt;&lt;/script&gt;</code>
+      </div>
+      <div class="grid">
+        <script src="http://jodiecomer.com.br/galeria/api.php?n=8"></script>
+      </div>
+    </section>
+
+    <section class="gallery">
+        <div class="tit">
+          <h1>Custom thumbnail size (example: 200x250)</h1>
+          <code>&lt;script src="http://seusite.com.br/galeria/api.php?w=200&h=250"&gt;&lt;/script&gt;</code>
+        </div>
+        <div class="grid">
+          <script src="http://jodiecomer.com.br/galeria/api.php?w=200&h=250"></script>
+        </div>
+      </section>
+
+      <section class="gallery">
+          <div class="tit">
+            <h1>Use GET params (number: n, width: w, height: h)</h1>
+            <code>&lt;script src="http://seusite.com.br/galeria/api.php?n=16w=200&h=250"&gt;&lt;/script&gt;</code>
+          </div>
+          <div class="grid">
+            <script src="http://jodiecomer.com.br/galeria/api.php?n=16&w=100&h=120"></script>
+          </div>
+        </section>
+
+        <a href="https://github.com/alexsandroveiga/coppermine-api/" target="_blank"><div class="gitbtn"><i class="fas fa-download"></i> <i class="fab fa-github"></i></div></a>
+        <footer><center>&copy; 2019 - Alexsandro Veiga</center></footer>
+  </body>
+</html>

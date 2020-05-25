@@ -5,8 +5,8 @@ header("Content-type: application/x-javascript");
 $file = "include/config.inc.php";
 include $file;
 
-$timthumbUrl = "http://beamiller.com.br/wp-content/themes/tri/timthumb.php";
-$galleryUrl = "http://beamiller.com.br/galeria";
+$timthumbUrl = "http://liampaynebr.com/wp-content/themes/tri/timthumb.php";
+$galleryUrl = "http://liampaynebr.com/galeria";
 
 if (!$link = mysqli_connect($CONFIG['dbserver'], $CONFIG['dbuser'], $CONFIG['dbpass'])) {
     echo 'Não foi possível conectar ao mysql';
